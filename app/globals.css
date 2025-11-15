@@ -5,6 +5,10 @@
 :root {
   --font-roboto: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  --color-primary: #A72703; 
+  --color-secondary: #FFE797; 
+  --color-accent: #D96C06; 
+  --color-bg: #FFE797;
 }
 
 body {
@@ -12,3 +16,25 @@ body {
   color: black;
   font-family: var(--font-roboto);
 }
+
+
+.circle-shape{
+  clip-path: circle(58% at 4% 50%);
+  background-color: white;
+}
+
+
+  .social-icon{
+    padding: 4px;
+    border: 2px solid #A72703;
+    color: #A72703;
+    
+    
+  }
+  .social-icon:hover,.download-btn:hover{
+    color: white;
+    background-color: #A72703;
+    box-shadow: 1px 1px 5px 2px #A72703;
+    transform: scale(1.05) translateY(-5px);
+    transition: all 0.2s ease;
+  }
