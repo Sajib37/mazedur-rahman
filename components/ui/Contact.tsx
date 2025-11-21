@@ -4,7 +4,7 @@ import { IoIosRocket } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaUser, FaPaperPlane } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
-import { useCallback, useState } from "react";
+import { useCallback, useState, ChangeEvent, FormEvent } from "react";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -14,13 +14,13 @@ const Contact = () => {
     message: "",
   });
 
-  const handleInputChange = useCallback((e) => {
+  const handleInputChange = useCallback((e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
   const handleSubmit = useCallback(
-    async (e) => {
+    async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       if (
