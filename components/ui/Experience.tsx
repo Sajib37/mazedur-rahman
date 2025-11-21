@@ -71,7 +71,7 @@ const Experience = () => {
 
         {/* Skills */}
         <div>
-          <h1 className="text-2xl mt-10 text-center font-bold md:text-4xl lg:text-5xl text-accent">
+          <h1 className="text-2xl mt-10 text-center font-bold md:text-4xl  text-accent">
             Skills & Expertise
           </h1>
           <div className="mx-auto h-1 bg-accent w-34 md:w-44 lg:w-64 mt-1"></div>
@@ -79,11 +79,11 @@ const Experience = () => {
           <div className="space-y-6 grid grid-cols-1 md:grid-cols-3 pt-8 md:pt-10">
             {Skills.map((skillGroup, index) => (
               <div key={index} className="mb-6">
-                <h2 className="text-xl font-semibold text-primary mb-2">
+                <h2 className="text-lg font-bold md:text-xl text-center text-primary mb-2">
                   {skillGroup.category}
                 </h2>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap justify-center gap-2">
                   {skillGroup.items.map((skill, i) => (
                     <div
                       key={i}
