@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Sidebar from "@/components/shared/Sidebar";
 import SmallNav from "@/components/shared/SmallNav";
+import Footer from "@/components/shared/Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
         <SmallNav />
         <Sidebar />
         {children}
+        <Footer />
       </body>
     </html>
   );

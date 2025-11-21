@@ -88,9 +88,9 @@ const Contact = () => {
         Contact With Me
       </div>
 
-      <div className="flex flex-col  md:flex-row-reverse items-center gap-8 md:gap-12 max-w-6xl mx-auto mt-8 md:mt-14">
+      <div className="flex flex-col  lg:flex-row-reverse items-center gap-8 md:gap-12 max-w-6xl mx-auto mt-8 md:mt-14">
         {/* contact form */}
-        <div className="w-80 md:w-full">
+        <div className="w-[350px] md:w-full">
           <div className="bg-accent/80 py-10 rounded-2xl p-2 md:p-8 border border-white/10 shadow-2xl">
             <div className="flex items-center gap-3 mb-6 md:mb-8">
               <div className="w-9 h-9 md:w-12 md:h-12 rounded-full bg-linear-to-r from-violet-500 to-blue-500 flex items-center justify-center">
@@ -173,7 +173,7 @@ const Contact = () => {
         </div>
 
         {/* contact information */}
-        <div className="space-y-4 md:space-y-8 w-80 md:w-full">
+        <div className="space-y-4 md:space-y-8 w-[350px] md:w-full">
           <div className="bg-accent/70 backdrop-blur-lg rounded-2xl mx-auto p-2 py-4 md:p-8 border border-white/10 shadow-2xl">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-linear-to-r from-violet-500 to-blue-500 flex items-center justify-center">

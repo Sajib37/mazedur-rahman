@@ -51,16 +51,16 @@ const Experience = () => {
                 {experience.title}
               </h2>
 
-              <p className="text-base font-semibold md:text-lg text-gray-700 dark:text-gray-300">
+              <p className="text-base font-semibold md:text-lg text-black dark:text-gray-300">
                 {experience.company}
               </p>
 
-              <p className="text-sm text-gray-500 mb-3">
+              <p className="text-sm text-black mb-3">
                 {experience.duration}
               </p>
 
               {/* Responsibilities List */}
-              <ul className="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
+              <ul className="list-disc ml-6 text-black dark:text-gray-300 space-y-1">
                 {experience.responsibilities.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
