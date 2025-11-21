@@ -51,7 +51,7 @@ const Experience = () => {
                 {experience.title}
               </h2>
 
-              <p className="text-base font-semibold md:text-lg text-black dark:text-gray-300">
+              <p className="text-base font-semibold md:text-lg text-black ">
                 {experience.company}
               </p>
 
@@ -60,7 +60,7 @@ const Experience = () => {
               </p>
 
               {/* Responsibilities List */}
-              <ul className="list-disc ml-6 text-black dark:text-gray-300 space-y-1">
+              <ul className="list-disc ml-6 text-black  space-y-1">
                 {experience.responsibilities.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
