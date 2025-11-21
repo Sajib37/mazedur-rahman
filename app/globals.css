@@ -1,14 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
 :root {
   --font-roboto: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  --color-primary: #A72703; 
-  --color-secondary: #FFE797; 
-  --color-accent: #D96C06; 
-  --color-bg: #FFE797;
+  --color-primary: #a72703;
+  --color-secondary: #ffe797;
+  --color-accent: #d96c06;
+  --color-Bg: #ffe797;
 }
 
 body {
@@ -17,24 +16,54 @@ body {
   font-family: var(--font-roboto);
 }
 
-
-.circle-shape{
-  clip-path: circle(58% at 4% 50%);
+.circle-shape {
+  clip-path: circle(60% at 4% 50%);
   background-color: white;
 }
 
+.social-icon {
+  padding: 4px;
+  border: 2px solid #a72703;
+  color: #a72703;
+}
+.social-icon:hover,
+.download-btn:hover {
+  color: white;
+  background-color: #a72703;
+  box-shadow: 1px 1px 5px 2px #a72703;
+  transform: scale(1.05) translateY(-5px);
+  transition: all 0.2s ease;
+}
 
-  .social-icon{
-    padding: 4px;
-    border: 2px solid #A72703;
-    color: #A72703;
-    
-    
+@media (max-width: 640px) {
+  .section-shape {
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0 100%);
   }
-  .social-icon:hover,.download-btn:hover{
-    color: white;
-    background-color: #A72703;
-    box-shadow: 1px 1px 5px 2px #A72703;
-    transform: scale(1.05) translateY(-5px);
-    transition: all 0.2s ease;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .section-shape {
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0 100%);
   }
+}
+@media (min-width: 1025px) {
+  .section-shape {
+    clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
+  }
+}
+
+/* Hover effect on juorney div */
+.leftEffect {
+  height: 100%;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #d96c0680;
+  border-radius: 12px;
+  transition: 0.8s;
+}
+
+.container:hover .leftEffect {
+  width: 100%;
+}
