@@ -34,7 +34,7 @@ const LearningJourney = () => {
   return (
     <section className="max-w-7xl mx-auto pt-10 md:pt-14 lg:pt-16 px-4">
       <h1 className="text-2xl mt-10 text-center font-bold md:text-4xl lg:text-5xl text-accent">
-        A Little About Me
+        Academic Journey
       </h1>
       <div className="mx-auto h-1 bg-accent w-34 md:w-44 lg:w-64 mt-1"></div>
 
@@ -58,7 +58,7 @@ const LearningJourney = () => {
                     {item.title}
                   </h1>
 
-                  <p className="text-sm md:text-base">{item.description}</p>
+                  <p className="text-base">{item.description}</p>
                 </div>
               </li>
             ))}

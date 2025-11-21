@@ -82,7 +82,7 @@ const Sidebar = () => {
                 <a
                   href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
                   onClick={handleClose}
-                  className="font-medium hover:bg-primary hover:text-white rounded-lg transition-colors duration-200"
+                  className="font-medium  hover:bg-primary text-white rounded-lg transition-colors duration-200"
                 >
                   {item}
                 </a>
