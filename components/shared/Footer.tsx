@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import {
   FaLinkedin,
   FaEnvelope,
@@ -56,19 +55,18 @@ const Footer = () => {
     {
       icon: FaMapMarkerAlt,
       text: "Beaumont, Texas, United States",
-      href: "https://maps.app.goo.gl/ZXbAJZHJE1tf5NWG7"
+      href: "https://maps.app.goo.gl/ZXbAJZHJE1tf5NWG7",
     },
   ];
 
   return (
-    <footer className=" bg-purple-900 text-slate-100 relative overflow-hidden">
+    <footer className=" bg-blue-900 text-slate-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 lg:px-8 py-8 md:py-10 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-12">
-          
           {/* Brand Section */}
           <div>
             <div className="flex items-center gap-3 mb-4 md:mb-6">
-              <div className="w-10 h-10 bg-linear-to-r from-blue-500 to-violet-500 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10  rounded-xl flex items-center justify-center">
                 <Image
                   src={logo}
                   height={20}
@@ -81,9 +79,10 @@ const Footer = () => {
             </div>
 
             <p className="text-slate-100 leading-relaxed mb-4 md:mb-6">
-              Business Graduate from University of Dhaka.  
-              HR Intern and MTO – Marketing HR with hands-on experience in 
-              recruitment, onboarding, employee development, and administrative operations.
+              Business graduate from the University of Dhaka with practical
+              exposure to core HR functions, including recruitment, onboarding,
+              and employee development. Currently pursuing higher studies in the
+              United States while gaining professional experience.
             </p>
 
             <div className="flex gap-4">
@@ -126,7 +125,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4 md:mb-6">
               Get In Touch
             </h4>
-            <ul className="md:space-y-4">
+            <ul className="space-y-2 md:space-y-4">
               {contactInfo.map((info, index) => (
                 <li key={index}>
                   <a
@@ -139,7 +138,7 @@ const Footer = () => {
                     }
                     className="flex items-center gap-3 text-slate-100 hover:text-slate-300 transition-colors duration-300 group"
                   >
-                    <div className="w-8 h-8 bg-slate-800/70 border border-slate-700/50 rounded-lg flex items-center justify-center group-hover:bg-slate-700/50 transition-colors duration-300">
+                    <div className="w-6 h-6 bg-slate-800/70 border border-slate-700/50 rounded-lg flex items-center justify-center group-hover:bg-slate-700/50 transition-colors duration-300">
                       <info.icon className="text-sm" />
                     </div>
                     <span>{info.text}</span>
@@ -148,7 +147,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
         </div>
 
         {/* Bottom Bar */}
@@ -159,7 +157,6 @@ const Footer = () => {
             </p>
           </div>
         </div>
-
       </div>
     </footer>
   );
